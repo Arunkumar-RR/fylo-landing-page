@@ -1,0 +1,340 @@
+.wrapper
+{
+    margin: 0 50px;
+}
+nav{
+    @include flex(row ,space-between,center,nowrap);
+    margin: 30px 0;
+    .logo
+    {
+        transform: scale(.9);
+    }
+    .nav-links
+    {
+        .links
+        {
+            margin: 0 20px;
+            padding: 10px;
+            font-size: $font-size-4;
+            &:hover
+            {
+                text-decoration: none;
+                background-color: lighten($color: #000000, $amount: 90);
+                border-radius:$border-radius-1;
+            }
+        }
+    }
+}
+#phase-1
+{
+    background-image: url(../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    height: 110vh;
+    .intro-container
+    {
+       @include flex(row,center,center,wrap); 
+        width: 91%;
+        margin: 0 auto;
+       .intro-content
+       {
+            width: 50%;
+            .heading
+            {
+                font-family: $font;
+                font-size: $font-size-1;
+                font-weight: map-get($map: $font-weight, $key:bold );
+                color: $primary-color;
+                margin: 20px 0;
+            }
+            .content
+            {
+                font-size: $font-size-4;
+                color: $primary-color;
+                width: 85%;
+            }
+            .form
+            {
+                margin: 20px 0;
+                #email
+                {
+                    padding: 10px;
+                    width: 50%;
+                  
+                }
+                ::placeholder
+                {
+                    font-family: $body;
+                    opacity: .4;
+                    font-size: $font-size-3;
+                }
+                .btn
+                {
+                    padding: 14px 50px;
+                    margin: 0 10px;
+                    background-color: $third-color;
+                    border: none;
+                    font-family: $font;
+                    font-size: $font-size-5;
+                    color: $neutral-2;
+                    border-radius: $border-radius-1;
+                    font-weight: map-get($map: $font-weight, $key:bold );
+                    &:hover
+                    {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+       }
+       .intro-bg-pic
+       {
+           background-image: url(../images/illustration-1.svg);
+           background-repeat: no-repeat;
+           background-size: contain;
+           width: 50%;
+           height: 400px;
+           margin: 40px 0 0 0;
+       }
+    }
+}
+#phase-2
+{
+   
+    background-color: #F8F8FE;
+    .description-container
+    {
+        @include flex(row,center,center,wrap);
+        width: 91%;
+        height: 110vh;
+        margin: 0 auto;
+        .content-container
+        {
+            width: 50%;
+            .description
+            {
+                .heading
+                {
+                font-family: $font;
+                font-size: $font-size-1;
+                font-weight: map-get($map: $font-weight, $key:bold );
+                color: $primary-color;
+                margin: 20px 0;
+                }
+                .content
+                {
+                    width: 85%;
+                    margin: 15px 0;
+                    font-size: $font-size-4;
+                }
+                .link{
+                    font-size: $font-size-4;
+                    color: $fourth-color;
+                    padding: 5px 0;
+                    border: 1px solid transparent;
+                    border-bottom: 1px solid $fourth-color ;
+                    text-decoration: none;
+                    svg
+                    {
+                        background-color: $fourth-color;
+                        border-radius: $border-radius-3;
+                        transform: scale(.9);
+                        position: relative;
+                        bottom: -3px;
+                    }
+                    &:hover
+                    {
+                        border: 1px solid $fourth-color ;
+                        transition: all .2s ease-in;
+                    }
+                }
+            }
+            .card
+            {
+                background-color: white;
+                width: 300px;
+                padding: 25px;
+                margin: 40px 0;
+                box-shadow: $box-shadow-1;
+                border-radius: $border-radius-1;
+                .feedback
+                {
+                    font-size: $font-size-5;
+                    line-height: 1.8em;
+                }
+                .author
+                {
+                    @include flex(row,flex-start,center,wrap);
+                    margin: 10px 0 0 0;
+                    color: $primary-color;
+                    .author-pic
+                    {
+                        background-image: url(../images/avatar-testimonial.jpg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 35px;
+                        height: 35px;
+                        border-radius: $border-radius-3;
+                        margin: 0 10px 0 0;
+                    }
+                    .author-details
+                    {
+                        .name
+                        {
+                            font-size: $font-size-5;
+                            font-family: $font;
+                            font-weight: map-get($map: $font-weight, $key:bold );
+                        }
+                        .position
+                        {
+                            font-size: $font-size-6;
+                        }
+                    }
+                }
+            }
+        }
+        .bg-pic
+        {
+            background-image: url(../images/illustration-2.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 50%;
+            height: 400px;
+        }
+    }
+}
+#phase-3
+{
+    background-color: $secondary-color;
+    .form-container
+    {
+        @include flex(row,center,center, wrap);
+        width: 91%;
+        margin: 0 auto;
+        padding: 50px 0 30px 0;
+        color: $neutral-2;
+        .content
+        {
+            width: 50%;
+            .heading
+            {
+                font-family: $font;
+                font-size: $font-size-2;
+                font-weight: map-get($map: $font-weight, $key:bold );
+                margin: 20px 0; 
+            }
+            .content
+            {
+                width: 80%;
+                margin: 15px 0;
+                font-size: $font-size-4;
+            }
+        }
+        .form{
+            margin-left: auto;
+            padding: 0 0 0 40px;
+            width: 50%;
+            @include flex(column,flex-start,center,wrap);
+            #email
+            {
+                width: 78%;
+                padding: 15px;
+                border: none;
+                box-shadow: $box-shadow-2;
+                border-radius: $border-radius-1;
+            }
+            ::placeholder
+            {
+                font-family: $body;
+                opacity: .4;
+                font-size: $font-size-3;
+            }
+            .btn
+            {
+                padding: 14px 50px;
+                margin: 10px 0;
+                background-color: $third-color;
+                border: none;
+                font-family: $font;
+                font-size: $font-size-5;
+                color: $neutral-2;
+                border-radius: $border-radius-1;
+                box-shadow: $box-shadow-2;
+                font-weight: map-get($map: $font-weight, $key:bold );
+                &:hover
+                {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+     
+}
+footer
+{
+    background-color: $primary-color;
+    padding:80px 0 0 0;
+    @include flex(column,flex-start,center,wrap);
+    .logo
+    {
+        transform: scale(.9);
+    }
+    .footer-content
+    {
+        @include flex(row,flex-start,flex-start,wrap);
+        color: $neutral-2;
+        width: 85vw;
+        margin: 10px  0;
+        .company-details
+        {
+            @include flex(column,flex-start,center,wrap);
+            font-size: $font-size-4;
+            width: 30%;
+            small
+            {
+                @include flex(row,flex-start,center,wrap);  
+                margin: 5px 0;
+                svg
+                {
+                    transform: scale(.6);
+                }
+            }
+        }
+        .link-container
+        {
+            @include flex(row,flex-start,flex-start,wrap);
+            flex: .8;
+            height: 200px;
+            .links-1
+            {
+                @include flex(column,flex-start,center,wrap);
+                width: 40%;
+                .links
+                {
+                    color: $neutral-2;
+                    font-size: $font-size-4;
+                    margin: 0 0 10px 0;
+                }
+            }
+            .links-2
+            {
+                @include flex(column,flex-start,center,wrap);
+
+                .links
+                {
+                    font-size: $font-size-4;
+                    color: $neutral-2;
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+        .social-links-container
+        {
+            a>img
+            {
+                margin: 0 10px;
+
+            }
+        }
+    }
+
+}

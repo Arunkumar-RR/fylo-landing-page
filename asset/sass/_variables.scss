@@ -1,0 +1,44 @@
+    $body: 'Open Sans', sans-serif;
+    $font: 'Raleway', sans-serif;
+    
+    $primary-color: hsl(243, 87%, 12%); 
+    $secondary-color:hsl(238, 22%, 44%); 
+    $third-color: hsl(224, 93%, 58%);
+    $fourth-color:hsl(170, 45%, 43%); 
+    $neutral-1:hsl(0, 0%, 75%);
+    $neutral-2:hsl(240, 75%, 98%);
+
+
+    $border-radius-1:3px;
+    $border-radius-2:15px;
+    $border-radius-3:25px;
+
+
+
+    $font-size:18px;
+
+    $font-size-1:2em;
+    $font-size-2:1.5em;
+    $font-size-3:1em;
+    $font-size-4:.8em;
+    $font-size-5:.55em;
+    $font-size-6:.4em;
+
+
+
+    $font-weight:(
+        'regular':400,
+        'bold':700
+
+    );
+
+    $box-shadow-1:  
+    0 0px 2.4px rgba(0, 0, 0, 0.045),
+    0 0px 19px rgba(0, 0, 0, 0.09)
+  ;
+    $box-shadow-2:
+
+    0 0.1px 2.1px rgba(0, 0, 0, 0.024),
+    0 0.4px 7.1px rgba(0, 0, 0, 0.036),
+    0 2px 32px rgba(0, 0, 0, 0.06)
+  ;

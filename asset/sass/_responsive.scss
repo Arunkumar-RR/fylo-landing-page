@@ -1,0 +1,231 @@
+@include smartphone
+{
+    .wrapper
+    {
+        margin: 0 50px;
+    }
+nav{
+    @include flex(row ,center,center,wrap);
+    margin: 30px 0;
+    .logo
+    {
+        transform: scale(.5);
+        margin: 0 auto 0 0;
+    }
+    .nav-links
+    {
+        .links
+        {
+            margin: 0 5px;
+            padding: 10px;
+        }
+    }
+}
+#phase-1
+{
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 150px;
+    .intro-container
+    {
+       @include flex(column,center,center,wrap); 
+        width: 90%;
+       .intro-content
+       {
+            width: 100%;
+            order: 2;
+            .heading
+            {
+                font-size: $font-size-2;
+                margin: 20px 0;
+            }
+            .content
+            {
+                font-size: $font-size-4;
+                color: $primary-color;
+                width: 100%;
+                padding: 0 30px;
+            }
+            .form
+            {
+                margin: 25px 0;
+                padding: 10px 0;
+                @include flex(column,center,center,wrap);
+                #email
+                {
+                    width: 90%;
+                }
+        
+                .btn
+                {
+                    width: 90%;
+                    margin: 10px 0;
+                    font-size: $font-size-4;
+                    &:hover
+                    {
+                        transform: scale(0);
+                    }
+                }
+            }
+       }
+       .intro-bg-pic
+       {
+           width: 100%;
+           height: 350px;
+           margin: 10px 0 0 0;
+           background-position: center;
+       }
+    }
+}
+#phase-2
+{
+   text-align: center;
+    .description-container
+    {
+        @include flex(column,center,center,wrap);
+        width: 90%;
+        height: fit-content;
+        .content-container
+        {
+            width: 100%;
+            order: 2;
+            .description
+            {
+                .heading
+                {
+                font-size: $font-size-3;
+                }
+                .content
+                {
+                    width: 100%;
+                    font-size: $font-size-4;
+                    text-align: left;
+                }
+                .link{
+                    margin: 10px 0;                
+                }
+            }
+            .card
+            {
+                text-align: left;
+                width: 100%;
+            }
+        }
+        .bg-pic
+        {
+            width: 100%;
+            height: 350px;
+            background-position: center;
+
+        }
+    }
+}
+#phase-3
+{
+    .form-container
+    {
+        @include flex(column,center,center, wrap);
+        width: 90%;
+        .content
+        {
+            width: 100%;
+            text-align: center;
+            .heading
+            {
+                font-size: $font-size-3;
+             
+            }
+            .content
+            {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+        .form
+        {
+            margin-left: none;
+            padding: 0 0 0 10px;
+            width: 100%;
+            @include flex(column,center,center,wrap);
+            #email
+            {
+                width: 100%;
+         
+            }
+     
+            .btn
+            {
+                width: 100%;    
+                font-size: $font-size-4;
+                &:hover
+                {
+                    transform: scale(0);
+                }
+            }
+        }
+    }
+     
+}
+footer
+{
+    background-color: $primary-color;
+    padding:80px 0 0 0;
+    @include flex(column,center,center,wrap);
+    .logo
+    {
+        transform: scale(.5);
+    }
+    .footer-content
+    {
+        @include flex(column,flex-start,flex-start,wrap);
+        width: 100%;
+        .company-details
+        {
+            @include flex(column,flex-start,center,wrap);
+            font-size: $font-size-3;
+            width: 100%;
+            small
+            {
+                svg
+                {
+                    transform: scale(.8);
+                }
+            }
+        }
+        .link-container
+        {
+            @include flex(column,flex-start,flex-start,nowrap);
+            flex: .8;
+            height: 200px;
+            .links-1
+            {
+                width: 100%;
+                margin: 20px 0;
+                .links
+                {
+                    font-size: $font-size-3;
+                }
+            }
+            .links-2
+            {
+                width: 100%;
+
+                .links
+                {
+                    font-size: $font-size-3;
+             
+                }
+            }
+        }
+        .social-links-container
+        {
+            margin: 30px auto;
+            a>img
+            {
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+}
